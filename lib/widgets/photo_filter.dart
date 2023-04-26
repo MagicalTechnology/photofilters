@@ -105,6 +105,7 @@ class _PhotoFilterSelectorState extends State<PhotoFilterSelector> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
+          automaticallyImplyLeading: false,
           title: widget.title,
           backgroundColor: widget.appBarColor,
           actions: <Widget>[
