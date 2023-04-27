@@ -137,7 +137,7 @@ class _PhotoFilterSelectorState extends State<PhotoFilterSelector> {
                       child: Container(
                         width: double.infinity,
                         height: double.infinity,
-                        padding: EdgeInsets.all(12.0),
+                        padding: EdgeInsets.all(8.0),
                         child: _buildFilteredImage(
                           _filter,
                           image,
@@ -309,7 +309,7 @@ class _PhotoFilterSelectorState extends State<PhotoFilterSelector> {
             )
           : Image.memory(
               cachedFilters[filter?.name ?? "_"] as dynamic,
-              fit: widget.fit,
+              fit: widget.contain,
             );
     }
   }
