@@ -309,7 +309,7 @@ class _PhotoFilterSelectorState extends State<PhotoFilterSelector> {
             )
           : Image.memory(
               cachedFilters[filter?.name ?? "_"] as dynamic,
-              fit: widget.contain,
+              fit: widget.fit,
             );
     }
   }
